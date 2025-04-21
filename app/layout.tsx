@@ -1,3 +1,6 @@
+import Header from "@/components/header";
+import Footer from "@/components/footer";
+
 import type { Metadata } from "next";
 import "./globals.css";
 
@@ -27,7 +30,9 @@ export default function RootLayout({
         className="font-poppins antialiased"
         suppressHydrationWarning={true}
       >
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
